@@ -1239,16 +1239,16 @@ iframe{
     }
     
     .sponsor-card-2{
-      height: 200px;
+      height: 290px;
       padding: 10px 20px 10px 20px;
     }
 
     #midnight-zone-2 .sponsor-card-2{
-      height: 150px;
+      height: 190px;
     }
 
     #hadal-zone-2 .sponsor-card-2{
-      height: 150px;
+      height: 190px;
     }
 
     #button-grid{
@@ -1608,16 +1608,16 @@ grid-column: 4/5;
 }
 
 .sponsor-card-2{
-  height: 150px;
+  height: 200px;
   padding: 10px 20px 10px 20px;
 }
 
 #midnight-zone-2 .sponsor-card-2{
-  height: 125px;
+  height: 135px;
 }
 
 #hadal-zone-2 .sponsor-card-2{
-  height: 125px;
+  height: 135px;
 }
 
 iframe{
