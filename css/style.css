@@ -782,7 +782,23 @@ h4{
   color:rgb(65, 65, 65);
 }
 
+.sponsor-card-small{
+  text-align: center;
+  padding: 30px 20px 30px 20px;
+  background-color: white;
+  margin: 10px 0px 30px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 12pt;
+  color:rgb(65, 65, 65);
+}
+
 .sponsor-card h4{
+  line-height: 1.33;
+  margin: 0px 0px 20px 0px;
+}
+
+.sponsor-card-small h4{
   line-height: 1.33;
   margin: 0px 0px 20px 0px;
 }
@@ -931,6 +947,10 @@ iframe{
 }
 
 .sponsor-card{
+  margin: 30px 30px 30px 30px;
+}
+
+.sponsor-card-small{
   margin: 30px 30px 30px 30px;
 }
 
@@ -1136,6 +1156,11 @@ iframe{
     background-color: rgb(0, 39, 76, 0.9);
   }
 
+  /* Sponsors Page */
+  #csg-logo{
+    width: 300px;
+  }
+
   /* Contact Page */
   iframe{
     width: 600px;
@@ -1311,7 +1336,18 @@ iframe{
       align-items: center;
       justify-content: center;
       height: 550px;
-      margin: 30px 10px 30px 10px;
+      margin: 15px 10px 15px 10px;
+    }
+
+    .sponsor-card-small{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      height: 350px;
+      margin: 15px 10px 15px 10px;
     }
 
     .sponsor-card-no-desc{
@@ -1668,6 +1704,22 @@ grid-column: 4/5;
   padding: 20px 10px 20px 10px;
 }
 
+.sponsor-card-small{
+  height: 300px;
+  margin: 20px 10px 20px 10px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px 20px 10px;
+}
+
+.sponsor-card-small img{
+  width: 300px;
+}
+
 #palm-logo{
   width: 250px;
   height: auto;
@@ -1699,6 +1751,10 @@ grid-column: 4/5;
   font-size: 14pt;
 }
 
+#csg-logo{
+  width: 175px;
+}
+
 .page-grid-2{
   display: grid;
   grid-template-columns: 50% 50%;
@@ -1727,6 +1783,7 @@ iframe{
   width: 850px;
   height: 1150px;
   margin-top: 20px;
+}
 }
 
 
