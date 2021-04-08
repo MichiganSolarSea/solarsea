@@ -846,33 +846,35 @@ h4{
 }
 
 .s-button{
-  color: white;
+  color: #00274C;
   font-size: 10pt;
 }
 
 #sponsorbutton{
-  background-color: #00274C;
+  background-color: #ffcd06;
   padding: 15px 10px 15px 10px;
   margin: 0px 0px 20px 0px;
+  border: 2px solid #00274C;
   border-radius: 3px 3px 3px 3px;
 }
 
 #sponsorbutton2{
-  background-color: #00274C;
+  background-color: #ffcd06;
+  border: 2px solid #00274C;
   padding: 15px 10px 15px 10px;
   margin: 20px 0px 0px 0px;
   border-radius: 3px 3px 3px 3px;
 }
 
 #sponsorbutton:hover{
-  background-color: #717171;
+  background-color: #c9c9c9;
   color: #00274C;
   text-decoration: underline;
   border: 2px solid #00274C;
 }
 
 #sponsorbutton2:hover{
-  background-color: #717171;
+  background-color: #c9c9c9;
   color: #00274C;
   text-decoration: underline;
   border: 2px solid #00274C;
@@ -1351,16 +1353,14 @@ iframe{
     }
 
     #sponsorbutton{
-      background-color: #00274C;
       padding: 15px 10px 15px 10px;
-      margin: 0px 10px 0px 10px;
+      margin: 0px 10px 20px 10px;
       border-radius: 3px 3px 3px 3px;
     }
     
     #sponsorbutton2{
-      background-color: #00274C;
       padding: 15px 10px 15px 10px;
-      margin: 0px 10px 0px 10px;
+      margin: 0px 10px 20px 10px;
       border-radius: 3px 3px 3px 3px;
     }
 
