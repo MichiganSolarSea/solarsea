@@ -656,6 +656,10 @@ h4{
   border: 1px solid #00274C;
 }
 
+.hover_caption{
+  display: none;
+}
+
 
 /* Sponsors Page */
 
@@ -963,11 +967,11 @@ iframe{
 
 /*This is for the flip card opposite sides */
 .flip-card {
-  background-color: transparent;
+  background-color: #00274C;
   border: none;
   width: 100%;
   height: auto;
-  min-height: 311px;
+  min-height: 355px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -979,7 +983,6 @@ iframe{
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  border: 1px solid #00274C;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -998,23 +1001,29 @@ iframe{
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #00274C;
+  background-color: none;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #ffcf06;
-  color: #00274C;
+  color: white;
   transform: rotateY(180deg);
 }
 
 .flip-p{
-  padding-top: 20%;
+  padding-top: 30%;
   margin: 0px 30px 0px 30px;
 }
 
 .preparation-grid h3{
   color: white;
+}
+
+.hover_caption{
+  color: white;
+  margin: 20px 0px 0px 0px;
+  display: block;
+  text-decoration: underline;
 }
 
 }
