@@ -28,7 +28,7 @@ Dark blue: #00274C
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -48,13 +48,13 @@ body {
 }
 
 .nav-container .logo {
-  max-width: 300px;
+  max-width: 250px;
   padding: 0 0px 0px 15px;
   overflow: hidden;
 }
 
 .nav-container .logo img{
-  max-width: 270px;
+  max-width: 220px;
 }
 
 .nav-container .logo a {
@@ -295,7 +295,7 @@ h1{
 
 .headerp{
   margin: 10px 0px 10px 0px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16pt;
 }
 
@@ -365,14 +365,17 @@ h4{
   border-radius: 3px 3px 3px 3px;
   text-decoration: none;
   font-size: 10pt;
+  border: 2px solid #00274C;
 }
 
+
 .button:hover{
-  background-color: lightgrey;
+  background-color: #ffcd06;
   color: #00274C;
   text-decoration: underline;
   border: 2px solid #00274C;
 }
+
 
 /* Main Page */
 
@@ -408,7 +411,7 @@ h4{
 }
 
 .valuesimg{
-  width: 175px;
+  width: 100px;
   height: auto;
 }
 
@@ -420,17 +423,13 @@ h4{
   margin: 10px 0px 10px 0px;
 }
 
-.teamh3{
-  margin: 10px 0px 5px 0px;
-}
-
-.teamlogop{
+.teamlogo p{
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
 }
 
 .teamlogo{
-  width: 250px;
+  width: 150px;
   height: auto;
 }
 
@@ -441,6 +440,7 @@ h4{
 .slideshow-container {
   width: 250px;
   position: relative;
+  align-self: center;
   margin: auto;
   margin-top: 30px;
 }
@@ -496,19 +496,13 @@ h4{
 
 /* Team Page */
 
-.chart img{
-  height: 200px;
-  width: auto;
-  margin: 30px 0px 10px 0px;
-}
-
 .chart p{
   font-size: 10pt;
   margin: 0px 25px 0px 25px;
 }
 
 .team-joining h2{
-  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .headshot-img{
@@ -531,9 +525,14 @@ h4{
   background-color: rgb(0, 39, 76, 0.9);
 }
 
-.officer-card h4{
+.officer-card h4 a{
   color: white;
 }
+
+.officer-card h4 a:hover{
+  color:#ffcd06;
+}
+
 .officer-card h3{
   color: white;
 }
@@ -543,7 +542,7 @@ h4{
 }
 
 .goals-card{
-  margin: 20px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 .goals-card h3{
@@ -568,11 +567,12 @@ h4{
   margin: 0px 0px 0px 20px;
 }
 
-.team-card h3{
+.team-card h3 a{
     color: #00274C;
-    font-size: 16pt;
-    margin: 5px 0px 5px 0px;
-    font-family: 'Open Sans';
+}
+
+.team-card h3{
+  margin: 15px 0px 10px 0px;
 }
 
 #busteam_1{
@@ -613,6 +613,7 @@ h4{
   text-align: center;
 }
 
+/*GRID STUFF IF WE REIMPLEMENT*/
 
 .preparation-square1{
   padding-top: 30px;
@@ -660,30 +661,109 @@ h4{
   display: none;
 }
 
+/*END GRID STUFF*/
+
 
 /* Sponsors Page */
 
-.sponsor-logo{
+/*NEW SPONSOR PAGE STUFF*/
+.new-sponsor-card{
+  text-align: center;
+  padding: 30px 20px 30px 20px;
+  background-color: white;
+  margin: 10px 0px 30px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 12pt;
+  color:rgb(65, 65, 65);
+}
+
+.new-sponsor-logo{
   width: 150px;
   height: auto;
 }
 
-.zone-card {
-  padding: 30px 20px 20px 20px;
-  margin: 30px 0px 30px 0px;
+.new-sponsor-img{
+  margin: 20px 0px 0px 0px;
 }
 
-.zone-card-2{
-  padding: 30px 20px 20px 20px;
-  margin: 30px 0px 0px 0px;
+.new-sponsor-content h4{
+  line-height: 1.4;
+}
+
+.sponsors-header{
+  text-align: center;
+  padding: 40px 30px 40px 30px;
+  background-color: white;
+  margin: 30px 30px 30px 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 12pt;
+  color:rgb(65, 65, 65);
+}
+
+.sponsors-page-card{
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+  background-color: white;
+  margin: 30px 30px 30px 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 12pt;
+  color:rgb(65, 65, 65);
+}
+
+.zone-card a:link{
+  text-decoration: none;
+}
+
+.zone-card a:hover{
+  text-decoration: underline;
+}
+
+.zone-card{
+  padding: 40px 30px 40px 30px;
 }
 
 .zone-card h3{
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
-.zone-card-2 h3{
-  padding-bottom: 10px;
+.small-sponsor-grid{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  justify-self: center;
+  /*flex-direction: column;*/
+}
+
+.small-sponsor-card{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 30px 20px 30px 20px;
+  background-color: white;
+  margin: 10px 10px 10px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 12pt;
+  color:rgb(65, 65, 65);
+  max-width: 1200px;
+  max-height: 300px;
+}
+
+.small-sponsor-logo{
+  width: 150px;
+  height: auto;
+}
+
+.small-sponsor-content h4{
+  padding-bottom: 20px;
+  line-height: 1.4;
 }
 
 #sunlight-zone{
@@ -698,16 +778,25 @@ h4{
   background-color: rgb(0, 39, 76, 0.7);
 }
 
-#midnight-zone h3{
-  color: white;
-}
-
 #hadal-zone{
   background-color: rgb(0, 39, 76);
 }
 
+#midnight-zone h3{
+  color: white;
+}
+
 #hadal-zone h3{
   color: white;
+}
+
+.s-button{
+  text-decoration: none;
+}
+
+.zone-card-2{
+  padding: 20px 0px 20px 0px;
+  margin: 20px 0px 0px 0px;
 }
 
 #sunlight-zone-2{
@@ -722,87 +811,19 @@ h4{
   background-color: rgb(0, 39, 76, 0.7);
 }
 
-#midnight-zone-2 h3{
-  color: white;
-}
-
 #hadal-zone-2{
   background-color: rgb(0, 39, 76);
-}
-
-#hadal-zone-2 h3{
-  color: white;
 }
 
 .white-h{
   color: white;
 }
 
-.sponsor-card{
-  text-align: center;
-  padding: 30px 20px 30px 20px;
-  background-color: white;
-  margin: 10px 0px 30px 0px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
-  0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  font-size: 12pt;
-  color:rgb(65, 65, 65);
-}
-
-.sponsor-card-small{
-  text-align: center;
-  padding: 30px 20px 30px 20px;
-  background-color: white;
-  margin: 10px 0px 30px 0px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
-  0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  font-size: 12pt;
-  color:rgb(65, 65, 65);
-}
-
-.sponsor-card h4{
-  line-height: 1.33;
-  margin: 0px 0px 20px 0px;
-}
-
-.sponsor-card-small h4{
-  line-height: 1.33;
-  margin: 0px 0px 20px 0px;
-}
-
-#flow-p{
-  margin-bottom: 20px;
-}
-
-.zone-card a:link{
-  text-decoration: none;
-}
-
-.zone-card a:hover{
-  text-decoration: underline;
-}
-
-.sponsor-card-no-desc{
-  text-align: center;
-  padding: 30px 20px 30px 20px;
-  background-color: white;
-  margin: 10px 0px 30px 0px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
-  0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  font-size: 12pt;
-  color:rgb(65, 65, 65);
-}
-
-.sponsor-card-no-desc h4{
-  line-height: 1.33;
-  margin: 0px 0px 20px 0px;
-}
-
 .sponsor-card-2{
   text-align: center;
   padding: 20px 20px 30px 20px;
   background-color: white;
-  margin: 30px 0px 10px 0px;
+  margin: 30px 20px 10px 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
   0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 12pt;
@@ -816,87 +837,81 @@ h4{
   margin: 0px 0px 0px 20px;
 }
 
-#palm-logo{
-  margin-top: 20px;
-}
 
-#anse-img{
-  margin-top: 20px;
-}
+/*END NEW SPONSOR PAGE STUFF*/
 
-#ansys_logo{
-  margin-top: 20px;
-}
-
-#lakeside_logo{
-  margin-top: 20px;
-}
-
-.page-grid-2{
-  margin: 20px 0px 0px 0px;
-}
-
-.s-button{
-  color: #00274C;
-  font-size: 10pt;
-}
-
-#sponsorbutton{
-  background-color: #ffcd06;
-  padding: 15px 10px 15px 10px;
-  margin: 0px 0px 20px 0px;
-  border: 2px solid #00274C;
-  border-radius: 3px 3px 3px 3px;
-}
-
-#sponsorbutton2{
-  background-color: #ffcd06;
-  border: 2px solid #00274C;
-  padding: 15px 10px 15px 10px;
-  margin: 20px 0px 0px 0px;
-  border-radius: 3px 3px 3px 3px;
-}
-
-#sponsorbutton:hover{
-  background-color: #c9c9c9;
-  color: #00274C;
-  text-decoration: underline;
-  border: 2px solid #00274C;
-}
-
-#sponsorbutton2:hover{
-  background-color: #c9c9c9;
-  color: #00274C;
-  text-decoration: underline;
-  border: 2px solid #00274C;
-}
-
-#button-grid{
-  margin: 20px 0px 30px 0px;
-}
 
 /*Contact Page*/
 
-iframe{
-  width: 260px;
-  height: 1300px;
-  margin-top: 20px;
+.form-grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
 }
 
-.iframe{
+.form-horizontal{
+  grid-column: 2/3;
   text-align: center;
 }
+
+.form-group{
+  padding: 15px 0px 15px 0px;
+  text-align: left;
+}
+
+input{
+  height: 50px;
+  width: 350px;
+
+}
+
+textarea{
+  height: 60px;
+  width: 350px;
+}
+
+.text-center{
+  text-align: center;
+  font-size: 24pt;
+  padding: 0px 0px 30px 0px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 
 @media screen and (min-width: 500px){
  
   #boat-logo{
     width: 300px;
   }
-
-  .chart img{
-  height: 300px;
-  width: auto;
-}
 
 .comp img{
   height: 300px;
@@ -921,34 +936,11 @@ iframe{
   margin: 25px 0px 0px 0px;
 }
 
-.sponsor-card{
-  margin: 30px 30px 30px 30px;
+.small-sponsor-card{
+  width: 390px;
+  height: 300px;
 }
 
-.sponsor-card-small{
-  margin: 30px 30px 30px 30px;
-}
-
-.sponsor-card-2{
-  margin: 30px 30px 30px 30px;
-}
-
-.sponsor-card-no-desc{
-  margin: 30px 30px 30px 30px;
-}
-
-.sponsor-logo{
-  width: 200px;
-  height: auto;
-}
-
-#sponsorbutton a{
-  font-size: 14pt;
-}
-
-#sponsorbutton2 a{
-  font-size: 14pt;
-}
 
 #teamsbutton .button{
   margin: 30px 0px 20px 0px;
@@ -1026,6 +1018,10 @@ iframe{
   text-decoration: underline;
 }
 
+.slideshow-container{
+  width: 350px;
+}
+
 }
 
 @media screen and (min-width: 768px){
@@ -1054,6 +1050,34 @@ iframe{
     color:rgb(65, 65, 65);
   }
 
+  /* Grid for the teams on main page */
+
+  .team-card-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 30px;
+  }
+
+  #team-card-1{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin: 20px 20px 20px 20px;
+  }
+
+  #team-card-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  #team-card-3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .team-card{
+    margin: 20px 20px 20px 20px;
+  }
+
   .mainpagebuttons{
     margin: 60px 0px 20px 0px;
   }
@@ -1062,7 +1086,6 @@ iframe{
     color: white;
     background-color: #00274C;
     padding: 15px 20px 15px 20px;
-    margin: 30px 20px 30px 30px;
     border-radius: 3px 3px 3px 3px;
     text-decoration: none;
   }
@@ -1131,6 +1154,7 @@ iframe{
   #teamsbutton a{
     font-size: 16pt;
   }
+  
 
   /* Competition Page */
 
@@ -1198,13 +1222,10 @@ iframe{
   }
 
   /* Sponsors Page */
-  #csg-logo{
-    width: 200px;
-  }
 
-  #cse-logo{
-    width: 200px;
-  }
+    .small-sponsor-card{
+      max-width: 300px;
+    }
 
   /* Contact Page */
   iframe{
@@ -1256,26 +1277,8 @@ iframe{
 
     /* Team Page */
 
-    .chart-grid{
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: auto;
-      grid-column-gap: 20px;
-    }
-
     .chart-desc{
-      grid-column: 1/2;
-      grid-row: 1/2;
       align-self: center;
-    }
-
-    .chart{
-      grid-column: 2/3;
-      grid-row: 1/2;
-    }
-
-    .team-joining h2{
-      margin-top: 30px;
     }
 
     #officer-grid{
@@ -1286,38 +1289,9 @@ iframe{
       justify-content: center;
     }
   
-    #officer1{
-      grid-column: 1/2;
-      grid-row: 1/2;
-    }
-  
-    #officer2{
-      grid-column: 2/3;
-      grid-row: 1/2;
-    }
-  
-    #officer3{
-      grid-column: 3/4;
-      grid-row: 1/2;
-    }
-  
     .officer-card{
       padding: 30px 10px 30px 10px;
       margin: 0px 0px 0px 0px;
-    }
-
-    #bottom-grid{
-      display: grid;
-      grid-template-rows: auto;
-      grid-template-columns: 50% 50%;
-    }
-
-    #bottom-grid #consulting-card{
-      margin: 30px 30px 30px 60px;
-    }
-
-    #bottom-grid #faculty-card{
-      margin: 30px 60px 30px 30px;
     }
 
     #teamsbutton .button{
@@ -1346,33 +1320,60 @@ iframe{
 
     /* Sponsors Page */
 
+    /* STUFF FOR NEW SPONSORS PAGE*/
+
+    .new-sponsor-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      margin: 0px 20px 0px 0px;
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    .new-sponsor-logo{
+      width: 100px;
+      height: auto;
+    }
+
+    .small-sponsor-img{
+      justify-content: center;
+      align-items: center;
+    }
+
+    .new-sponsor-grid{
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+
+    .new-sponsor-content{
+      text-align: left;
+      grid-column: 2/3;
+      justify-content: center;
+    }
+
+    .flex-center{
+      padding-top: 2%;
+    }
+
+    .small-sponsor-card{
+      min-width: 390px;
+      width: 390px;
+    }
+
     .zone-grid{
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: auto;
     }
 
-    .zone-card{
-      margin: 20px 10px 20px 10px;
-    }
-
     .zone-card-2{
-      margin: 20px 10px 20px 10px;
+      margin: 10px 10px 10px 10px;
     }
 
-    .sponsor-img{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    /* END NEW SPONSORS PAGE */
 
-    #palm-logo{
-      margin-top: 0px;
-    }
-
-    #anse-img{
-      margin-top: 20px;
-    }
 
     .sponsor-card{
       display: grid;
@@ -1415,7 +1416,7 @@ iframe{
     }
     
     .sponsor-card-2{
-      height: 290px;
+      height: 250px;
       padding: 10px 20px 10px 20px;
     }
 
@@ -1431,19 +1432,6 @@ iframe{
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: auto;
-      margin: 20px 0px 0px 0px;
-    }
-
-    #sponsorbutton{
-      padding: 15px 10px 15px 10px;
-      margin: 0px 10px 20px 10px;
-      border-radius: 3px 3px 3px 3px;
-    }
-    
-    #sponsorbutton2{
-      padding: 15px 10px 15px 10px;
-      margin: 0px 10px 20px 10px;
-      border-radius: 3px 3px 3px 3px;
     }
 
 }
@@ -1458,29 +1446,6 @@ iframe{
     grid-column: 1/3;
     grid-row: 1/2;
     margin-bottom: 0px;
-  }
-
-  .col1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 2/3;
-    justify-content: center;
-    align-self: center;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 30px;
-  }
-
-  .col2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row: 2/3;
-    align-self: center;
-  }
-
-  .slideshow-container {
-    width: 400px;
-    margin: 30px 30px 0px 30px;
   }
 
 
@@ -1517,43 +1482,7 @@ iframe{
 }
 
 
-/* Grid for the teams on main page */
-
-  .team-card-grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin-top: 30px;
-  }
-
-  #team-card-1{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    margin: 20px 20px 20px 20px;
-  }
-
-  #team-card-2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-
-  #team-card-3{
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  .team-card{
-    margin: 20px 20px 20px 20px;
-  }
-
-  .mainpagebuttons{
-    margin: 40px 0px 20px 0px;
-  }
-
 /* Team page */
-
-.chart-grid{
-  margin: 0px 100px 0px 100px;
-}
 
 .team-grid{
   display: grid;
@@ -1564,69 +1493,14 @@ iframe{
   justify-content: center;
 }
 
-#hullteam1{
-grid-row: 1/2;
-grid-column: 1/2;
-}
-
-#hullteam2{
-grid-row: 1/2;
-grid-column: 2/3;
-}
-
-#hullteam3{
-grid-row: 1/2;
-grid-column: 3/4;
-}
-
-#hullteam4{
-grid-row: 1/2;
-grid-column: 4/5;
-}
-
-#hullteam5{
-grid-row: 2/3;
-grid-column: 1/2;
-}
-
-#hullteam6{
-grid-row: 2/3;
-grid-column: 2/3;
-}
-
-#hullteam7{
-grid-row: 2/3;
-grid-column: 3/4;
-}
-
-#hullteam8{
-grid-row: 2/3;
-grid-column: 4/5;
-}
-
-#elec1{
+.elec1{
   grid-column: 2/3;
   grid-row: 1/2;
 }
 
-#elec2{
+.elec2{
   grid-column: 3/4;
   grid-row: 1/2;
-}
-
-#business5{
-  grid-row: 2/3;
-  grid-column: 2/3;
-}
-
-#business6{
-  grid-row: 2/3;
-  grid-column: 3/4;
-}
-
-#busteam_1{
-  grid-column-start: 2;
-  grid-column-end: 3;
 }
 
 #teamsbutton{
@@ -1689,6 +1563,14 @@ grid-column: 4/5;
   margin: 20px 0px 0px 10px;
 }
 
+.slideshow-container {
+  width: 950px;
+  align-self: center;
+  text-align: center;
+}
+
+/*GRID DETAILS IF WE RE IMPLEMENT*/
+
 .preparation-grid{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -1714,14 +1596,9 @@ grid-column: 4/5;
   background-color: rgb(0, 39, 76, 0.6);
 }
 
-/* Sponsor Page */
+/*END GRID*/
 
-.page-grid{
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 20px;
-}
+/* Sponsor Page */
 
 #sunlight-zone{
   grid-row:1/2;
@@ -1755,27 +1632,6 @@ grid-column: 4/5;
   padding: 20px 10px 20px 10px;
 }
 
-.sponsor-card-small{
-  height: 300px;
-  margin: 20px 10px 20px 10px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 10px 20px 10px;
-}
-
-.sponsor-card-small img{
-  width: 300px;
-}
-
-#palm-logo{
-  width: 250px;
-  height: auto;
-}
-
 .sponsor-card-no-desc{
   height: 300px;
   margin: 20px 10px 20px 10px;
@@ -1802,35 +1658,10 @@ grid-column: 4/5;
   font-size: 14pt;
 }
 
-#csg-logo{
-  width: 175px;
-}
-
-#cse-logo{
-  width: 175px;
-}
-
-#ilmor-logo{
-  width: 300px;
-}
-
-#ansys_logo{
-  margin-top: 0px;
-}
-
-#lakeside_logo{
-  margin-top: 0px;
-}
-
 .page-grid-2{
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto;
-}
-
-.zone-card-2 {
-  padding: 30px 30px 20px 30px;
-  margin: 10px 10px 30px 10px;
 }
 
 .sponsor-card-2{
@@ -1844,12 +1675,6 @@ grid-column: 4/5;
 
 #hadal-zone-2 .sponsor-card-2{
   height: 135px;
-}
-
-iframe{
-  width: 850px;
-  height: 1150px;
-  margin-top: 20px;
 }
 }
 
