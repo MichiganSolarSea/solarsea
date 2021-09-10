@@ -54,7 +54,7 @@ body {
 }
 
 .nav-container .logo img{
-  max-width: 220px;
+  max-width: 200px;
 }
 
 .nav-container .logo a {
@@ -101,7 +101,7 @@ body {
 .nav-container .navbar ul li a {
   text-decoration: none;
   color: white;
-  font-size: 13pt;
+  font-size: 12pt;
   display: block;
   height: 80px;
   line-height: 82px;
@@ -270,7 +270,7 @@ body {
     margin: 30px 30px 30px 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    font-family: "Playfair Display";
+    font-family: "Rockwell";
     font-size: 17pt;
     color:#00274C;
 }
@@ -303,7 +303,7 @@ h2{
     font-weight: bold;
     color: #00274C;
     font-size: 22pt;
-    font-family: "Playfair Display";
+    font-family: "Rockwell";
     margin-bottom: 20px;
 }
 
@@ -337,7 +337,7 @@ h3{
   color: #00274C;
   font-size: 18pt;
   font-weight: bold;
-  font-family: "Playfair Display";
+  font-family: "Rockwell";
 }
 
 h4{
@@ -690,6 +690,9 @@ h4{
 
 .new-sponsor-content h4{
   line-height: 1.4;
+  font-size: 16pt;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .sponsors-header{
@@ -728,6 +731,7 @@ h4{
 
 .zone-card h3{
   padding-bottom: 20px;
+  font-size: 18pt;
 }
 
 .small-sponsor-grid{
@@ -1099,45 +1103,6 @@ iframe{
       grid-column-gap: 10px;
   }
 
-  #hullteam1{
-    grid-row: 1/2;
-    grid-column: 1/2;
-  }
-
-  #hullteam2{
-    grid-row: 1/2;
-    grid-column: 2/3;
-  }
-
-  #hullteam3{
-    grid-row: 2/3;
-    grid-column: 1/2;
-  }
-
-  #hullteam4{
-    grid-row: 2/3;
-    grid-column: 2/3;
-  }
-
-  #hullteam5{
-    grid-row: 3/4;
-    grid-column: 1/2;
-  }
-
-  #hullteam6{
-    grid-row: 3/4;
-    grid-column: 2/3;
-  }
-
-  #hullteam7{
-    grid-row: 4/5;
-    grid-column: 1/2;
-  }
-
-  #hullteam8{
-    grid-row: 4/5;
-    grid-column: 2/3;
-  }
 
   #electrical2{
     align-self: center;
@@ -1650,12 +1615,23 @@ iframe{
   margin: 10px 0px 30px 0px;
 }
 
+.zone-card h3{
+  padding-bottom: 20px;
+  font-size: 22pt;
+}
+
 .sponsor-logo{
   width: 150px;
   height: auto;
 }
 
-.sponsor-content h4{
+.new-sponsor-content h4{
+  line-height: 1.4;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.new-sponsor-content p{
   font-size: 14pt;
 }
 
