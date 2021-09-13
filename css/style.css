@@ -380,6 +380,7 @@ h4{
 /* Main Page */
 
 #boat-logo{
+  display: none;
   width: 250px;
 }
 
@@ -416,7 +417,14 @@ h4{
 }
 
 .team-card{
+  margin: 00px 0px 0px 0px;
+  padding: 10px 10px 15px 10px;
+}
+
+.team-card-leader{
   margin: 40px 0px 10px 0px;
+  background-color: rgb(0, 39, 76, 0.1);
+  padding: 10px 10px 15px 10px;
 }
 
 #team-card-1{
@@ -491,6 +499,13 @@ h4{
 
 .active, .dot:hover {
   background-color: #717171;
+}
+
+/*THIS IS FOR THE MAIN PAGE VIDEO*/
+#video-grid iframe{
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
 }
 
 
@@ -574,6 +589,14 @@ h4{
 
 .team-card h3{
   margin: 15px 0px 10px 0px;
+}
+
+.team-card-leader h3 a{
+  color: #00274C;
+}
+
+.team-card-leader h3{
+margin: 15px 0px 10px 0px;
 }
 
 #busteam_1{
@@ -918,6 +941,11 @@ textarea {
     width: 300px;
   }
 
+  #video-grid iframe{
+    width: 90%;
+    height: 250px;
+}
+
 .comp img{
   height: 300px;
   width: auto;
@@ -1033,11 +1061,12 @@ iframe{
   #boat-logo{
     display: none;
   }
-  
-  #boat-logo-2{
-    display:inline-block;
-    width: 300px;
-  }
+
+  #video-grid iframe{
+    width: 90%;
+    height: 325px;
+    margin-top: 20px;
+}
   
   .slideshow-container {
     width: 500px;
@@ -1063,23 +1092,11 @@ iframe{
     margin-top: 30px;
   }
 
-  #team-card-1{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    margin: 20px 20px 20px 20px;
-  }
-
-  #team-card-2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-
-  #team-card-3{
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
   .team-card{
+    margin: 0px 20px 0px 20px;
+  }
+
+  .team-card-leader{
     margin: 20px 20px 20px 20px;
   }
 
@@ -1241,6 +1258,12 @@ iframe{
     height: auto;
   }
 
+  #video-grid iframe{
+    width: 600px;
+    height: 325px;
+    margin-top: 30px;
+}
+
     /* Team Page */
 
     .chart-desc{
@@ -1249,7 +1272,7 @@ iframe{
 
     #officer-grid{
       display: grid;
-      grid-template-columns: 33.3% 33.3% 33.3%;
+      grid-template-columns: 50% 50%;
       grid-template-rows: auto;
       grid-column-gap: 20px;
       justify-content: center;
@@ -1461,12 +1484,10 @@ iframe{
 
 .elec1{
   grid-column: 2/3;
-  grid-row: 1/2;
 }
 
 .elec2{
   grid-column: 3/4;
-  grid-row: 1/2;
 }
 
 #teamsbutton{
@@ -1476,6 +1497,22 @@ iframe{
 #teamsbutton .button{
   margin: 30px 0px 20px 0px;
   padding: 20px 360px 20px 360px;
+}
+
+.headshot-img img{
+  height: 175px;
+  width: auto;
+}
+
+.top-team-grid{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+}
+
+.team-desc{
+  align-self: center;
+  padding: 0px 10px 0px 10px;
 }
 
 /* Competition Page */
