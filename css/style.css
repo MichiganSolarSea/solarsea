@@ -750,6 +750,8 @@ margin: 15px 0px 10px 0px;
 
 .zone-card{
   padding: 40px 30px 40px 30px;
+  text-align: center;
+  text-align: -webkit-center;
 }
 
 .zone-card h3{
@@ -1207,7 +1209,11 @@ iframe{
   /* Sponsors Page */
 
     .small-sponsor-card{
-      max-width: 300px;
+      max-width: 270px;
+    }
+
+    .sponsors-page-card{
+      margin: 30px 60px 30px 60px;
     }
 
   /* Contact Page */
@@ -1321,6 +1327,10 @@ iframe{
       grid-row: 1/2;
     }
 
+    .new-sponsor-card{
+      width: 90%;
+    }
+
     .new-sponsor-logo{
       width: 100px;
       height: auto;
@@ -1344,11 +1354,6 @@ iframe{
 
     .flex-center{
       padding-top: 2%;
-    }
-
-    .small-sponsor-card{
-      min-width: 390px;
-      width: 390px;
     }
 
     .zone-grid{
@@ -1664,12 +1669,7 @@ iframe{
 
 .new-sponsor-content h4{
   line-height: 1.4;
-  font-size: 20pt;
   font-weight: bold;
-}
-
-.new-sponsor-content p{
-  font-size: 14pt;
 }
 
 .page-grid-2{
