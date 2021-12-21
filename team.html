@@ -1,68 +1,62 @@
 <!DOCTYPE html>
 <html lang='en' dir='ltr'>
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rockwell">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style2.css">
         <title>Michigan Electric Boat</title>
     </head>
     <body>
-
-        <div class="container">
-            <nav>   
-                <div class="nav-container">
-                    <div class="logo">
-                        <a href="#"><img src="logos/new_nav_logo.png" alt="Michigan Electric Boat Logo"></a>
-                    </div>
-                <div class="navbar">
-                
-                <div class="icon-bar" onclick="Show()">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </div>
-                <div id="navlist">
-                <ul id="nav-lists">
-                    <li class="close"><span onclick="Hide()">×</span></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a id="current" href="team.html">Our Teams</a></li>
-                    <li><a href="competition.html">Competition</a></li>
-                    <li><a href="newsponsors.html">Donations/Sponsors</a></li>
-                    <li><a href="joinus.html">Join Us</a></li>
-                    <li class="last"><a href="contact.html">Contact</a></li>
-                </ul>
-                </div>
-                
-                </div>
-                </div>
-                </nav>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div> 
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html"><img id="nav-logo" src="logos/new_nav_logo.png" alt="University of Michigan Electric Boat Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="team.html">Our Teams <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="competition.html">Competition</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newsponsors.html">Donations/Sponsors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="joinus.html">Join Us</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
         <main>
         <header>
         <div class="page-header">
             <h1>Our Teams</h1>
         </div>
         </header>
-        <div class="main-page">
+        <div class="main-page" id="main">
             <div class="page-card">
                 <h2>About Our Teams</h2>
-                <div class="chart-desc">
-                <p>Our three sub teams work together in order to lead UM-EB to victory! Each team works throughout the year to prepare for our summer competition -  the <a href="http://www.navalengineers.org/Education/Promoting-Electric-Propulsion-PEP">Promoting Electronic Propulsion Competition</a>. We rely on communication across all three teams in order to reach our goals! We operate with the DEI initiative that states that diversity is paramount to UM-EB's success. We are building the next generation of leaders in the field of engineering. Everyone is welcome to our team regardless of background, experience, or area of expertise. There is a place for everyone at UM-EB!</p>
-                </div>
+                <p>Our three sub teams work together in order to lead UM-EB to victory! Each team works throughout the year to prepare for our summer competition -  the <a href="http://www.navalengineers.org/Education/Promoting-Electric-Propulsion-PEP" target="_blank">Promoting Electronic Propulsion Competition</a>. We rely on communication across all three teams in order to reach our goals! We operate with the DEI initiative that states that diversity is paramount to UM-EB's success. We are building the next generation of leaders in the field of engineering. Everyone is welcome to our team regardless of background, experience, or area of expertise. There is a place for everyone at UM-EB!</p>
                 <div class="team-joining">
                     <h2>Team Goals</h2>
-                    <div class="goals-card">
                     <ul>
                         <li>Foster inclusivity and community among a group of diverse individuals, especially younger members to further their understanding of sustainable technologies and to provide leadership opportunities</li>
                         <li>Develop a two-year plan for team structure and possible design upgrades, integrating all team members in the design and build process to develop a stronger team culture</li>
                         <li>Expand upon our theoretical knowledge to create real-world solutions, utilizing data collection and modeling software for our calculations</li>
                         <li>Design and build a complete electrical system capable of high performance</li>
                     </ul>
-                    </div>
-                    <div class="mainpagebuttons" id="teamsbutton"><a class="button" target="_blank" href="joinus.html">Join our team</a></div>
+                    <a href="joinus.html" class="btn btn-outline-primary">Join our team</a>
                 </div>
             </div>
             <div class="page-card">
@@ -70,21 +64,17 @@
                 <div id="officer-grid">
                 <div class="officer-card">
                     <h3>Captain</h3>
-                    <div class="headshot-img">
-                    <img src="images/Members/Deven.png" alt="Deven Parmar Headshot">
-                    </div>
-                    <h4><a href="https://www.linkedin.com/in/parmar-deven/" target="_blank">Deven Parmar</a></h4>
+                    <img class="headshot-img" src="images/Members/Deven.png" alt="Deven Parmar Headshot">
+                    <a href="https://www.linkedin.com/in/parmar-deven/" target="_blank"><h4>Deven Parmar</h4></a>
                     <p>Aerospace Engineering</p>
-                    <p><a href="mailto:devenp@umich.edu">devenp@umich.edu</a></p>
+                    <a href="mailto:devenp@umich.edu">devenp@umich.edu</a>
                 </div>
                 <div class="officer-card">
                     <h3>Chief Engineer</h3>
-                    <div class="headshot-img">
-                    <img src="images/Members/Sean.JPG" alt="Sean Hickey Headshot">
-                    </div>
-                    <h4><a target="_blank" href="https://www.linkedin.com/in/sean-hickey-432691190/">Sean Hickey</a></h4>
+                    <img class="headshot-img" src="images/Members/Sean.JPG" alt="Sean Hickey Headshot">
+                    <a target="_blank" href="https://www.linkedin.com/in/sean-hickey-432691190/"><h4>Sean Hickey</h4></a>
                     <p>Naval Architecture and Marine Engineering</p>
-                    <p><a href="mailto:hicsea.edu">hicsea@umich.edu</a></p>
+                    <a href="mailto:hicsea.edu">hicsea@umich.edu</a>
                 </div>
                 </div>
             </div>
@@ -96,105 +86,77 @@
                 </div>
                 <div class="team-card-leader">
                     <h3>Mechanical Director</h3>
-                    <div class="headshot-img">
-                    <img src="images/Members/Ethan.jpg" alt="Ethan Almquist Headshot">
-                    </div>
-                    <h3><a target="_blank" href="https://www.linkedin.com/in/ethan-almquist/">Ethan Almquist</a></h3>
+                    <img class="headshot-img" src="images/Members/Ethan.jpg" alt="Ethan Almquist Headshot">
+                    <a target="_blank" href="https://www.linkedin.com/in/ethan-almquist/"><h4>Ethan Almquist</h4></a>
                     <p>Naval Architecture and Marine Engineering</p>
                 </div>
                 </div>
                 <div class="team-grid">
                     <div class="team-card">
-                        <div class="headshot-img">
-                        <img src="images/Members/Brian.jpeg" alt="Brian Axelsen Headshot">
-                        </div>
-                        <h3><a target="_blank" href="https://www.linkedin.com/in/brian-axelsen-3980a31b1/">Brian Axelsen</a></h3>
+                        <img class="headshot-img" src="images/Members/Brian.jpeg" alt="Brian Axelsen Headshot">
+                        <a target="_blank" href="https://www.linkedin.com/in/brian-axelsen-3980a31b1/"><h4>Brian Axelsen</h4></a>
                         <p>Naval Architecture and Marine Engineering</p>
                     </div>
                     <div class="team-card">
-                        <div class="headshot-img">
-                        <img src="images/Members/Cooper.jpg" alt="Cooper Clark Headshot">
-                        </div>
-                        <h3><a target="_blank" href="https://www.linkedin.com/in/cooper-clark-73933a190/">Cooper Clark</a></h3>
+                        <img class="headshot-img" src="images/Members/Cooper.jpg" alt="Cooper Clark Headshot">
+                        <a target="_blank" href="https://www.linkedin.com/in/cooper-clark-73933a190/"><h4>Cooper Clark</h4></a>
                         <p>Naval Architecture and Marine Engineering</p>
                     </div>
                     <div class="team-card">
-                        <div class="headshot-img">
-                        <img src="images/Members/Carson.jpeg" alt="Carson Denman Headshot">
-                        </div>
-                        <h3><a target="_blank" href="https://www.linkedin.com/in/carsondenman/">Carson Denman</a></h3>
+                        <img class="headshot-img" src="images/Members/Carson.jpeg" alt="Carson Denman Headshot">
+                        <a target="_blank" href="https://www.linkedin.com/in/carsondenman/"><h4>Carson Denman</h4></a>
                         <p>Naval Architecture and Marine Engineering</p>
                     </div>
                     <div class="team-card">
-                        <div class="headshot-img">
-                        <img src="images/Members/Zach.jpeg" alt="Zach Duval Headshot">
-                        </div>
-                        <h3><a target="_blank" href="https://www.linkedin.com/in/zach-duval/">Zach Duval</a></h3>
+                        <img class="headshot-img" src="images/Members/Zach.jpeg" alt="Zach Duval Headshot">
+                        <a target="_blank" href="https://www.linkedin.com/in/zach-duval/"><h4>Zach Duval</h4></a>
                         <p>Naval Architecture and Marine Engineering</p>
                     </div>
                     <div class="team-card">
-                        <div class="headshot-img">
-                        <img src="images/Members/Sean.JPG" alt="Sean Hickey Headshot">
-                        </div>
-                        <h3><a target="_blank" href="https://www.linkedin.com/in/sean-hickey-432691190/">Sean Hickey</a></h3>
+                        <img class="headshot-img" src="images/Members/Sean.JPG" alt="Sean Hickey Headshot">
+                        <a target="_blank" href="https://www.linkedin.com/in/sean-hickey-432691190/"><h4>Sean Hickey</h4></a>
                         <p>Naval Architecture and Marine Engineering</p>
                     </div>
                     <div class="team-card">
-                        <div class="headshot-img">
-                        <img src="images/Members/Darren.jpg" alt="Darren Huang Headshot">
-                        </div>
-                        <h3>Darren Huang</h3>
+                        <img class="headshot-img" src="images/Members/Darren.jpg" alt="Darren Huang Headshot">
+                        <h4>Darren Huang</h4>
                         <p>Mechanical Engineering</p>
                     </div>
                     <div class="team-card">
-                        <div class="headshot-img">
-                        <img src="images/Members/Maria.png" alt="Maria Kuenzer Headshot">
-                        </div>
-                        <h3><a target="_blank" href="https://www.linkedin.com/in/maria-kuenzer-ab45041b6/">Maria Kuenzer</a></h3>
+                        <img class="headshot-img" src="images/Members/Maria.png" alt="Maria Kuenzer Headshot">
+                        <a target="_blank" href="https://www.linkedin.com/in/maria-kuenzer-ab45041b6/"><h4>Maria Kuenzer</h4></a>
                         <p>Environmental Engineering</p>
                     </div>
                     <div class="team-card">
-                        <div class="headshot-img">
-                        <img src="images/Members/Kelly.png" alt="Kelly Nguyen Headshot">
-                        </div>
-                        <h3>Kelly Nguyen</h3>
+                        <img class="headshot-img" src="images/Members/Kelly.png" alt="Kelly Nguyen Headshot">
+                        <h4>Kelly Nguyen</h4>
                         <p>Chemical Engineering</p>
                     </div>
-                    <div class="elec1">
                     <div class="team-card">
-                        <div class="headshot-img">
-                        <img src="images/Members/Deven.png" alt="Deven Parmar Headshot">
-                        </div>
-                        <h3><a target="_blank" href="https://www.linkedin.com/in/parmar-deven/">Deven Parmar</a></h3>
+                        <img class="headshot-img" src="images/Members/Deven.png" alt="Deven Parmar Headshot">
+                        <a target="_blank" href="https://www.linkedin.com/in/parmar-deven/"><h4>Deven Parmar</h4></a>
                         <p>Aerospace Engineering</p>
                     </div>
-                    </div>
-                    <div class="elec2">
                     <div class="team-card">
-                        <div class="headshot-img">
-                        <img src="images/Members/Kyle.jpg" alt="Kyle Pefley Headshot">
-                        </div>
-                        <h3><a target="_blank" href="https://www.linkedin.com/in/kylepefley/">Kyle Pefley</a></h3>
+                        <img class="headshot-img" src="images/Members/Kyle.jpg" alt="Kyle Pefley Headshot">
+                        <a target="_blank" href="https://www.linkedin.com/in/kylepefley/"><h4>Kyle Pefley</h4></a>
                         <p>Industrial and Operations Engineering</p>
-                    </div>
                     </div>
                     </div>
                 </div>
                 <div class="page-card">
                     <div class="top-team-grid">
-                    <div class="team-desc">
-                    <h2>Electrical Team</h2>
-                    <p>By coordinating our solar systems with a wide array of electronics, the Electric Team combines Electrical Engineering and Computer Science to help us put the pedal to the metal. They are in charge of researching and building the boat's motor and safety systems with key software controls. They are also responsible for implementing the solar array, sensors, and the battery.</p>
-                    </div>
+                        <div class="team-desc">
+                            <h2>Electrical Team</h2>
+                            <p>By coordinating our solar systems with a wide array of electronics, the Electric Team combines Electrical Engineering and Computer Science to help us put the pedal to the metal. They are in charge of researching and building the boat's motor and safety systems with key software controls. They are also responsible for implementing the remote control system, sensors, and the battery.</p>
+                        </div>
                         <div class="team-card-leader">
                             <h3>Electrical Director</h3>
-                            <div class="headshot-img">
-                            <img src="images/Members/Jimmy.jpg" alt="Jimmy Chen Headshot">
-                            </div>
-                            <h3><a target="_blank" href="https://www.linkedin.com/in/chen-jimmy/">Jimmy Chen</a></h3>
+                            <img class="headshot-img" src="images/Members/Jimmy.jpg" alt="Jimmy Chen Headshot">
+                            <a target="_blank" href="https://www.linkedin.com/in/chen-jimmy/"><h4>Jimmy Chen</h4></a>
                             <p>Electrical Engineering/Mechanical Engineering</p>
                         </div>
-                        </div>
+                    </div>
                 </div>
                 <div class="page-card">
                     <div class="top-team-grid">
@@ -204,33 +166,25 @@
                     </div>
                     <div class="team-card-leader">
                         <h3>Business Director</h3>
-                        <div class="headshot-img">
-                        <img src="images/Members/Mitchell.jpg" alt="Mitchell Davidson Headshot">
-                        </div>
-                        <h3><a target="_blank" href="https://www.linkedin.com/in/mitchelldavidson23/">Mitchell Davidson</a></h3>
+                        <img class="headshot-img" src="images/Members/Mitchell.jpg" alt="Mitchell Davidson Headshot">
+                        <a target="_blank" href="https://www.linkedin.com/in/mitchelldavidson23/"><h4>Mitchell Davidson</h4></a>
                         <p>Business Administration</p>
                     </div>
                     </div>
                     <div class="team-grid">
                         <div class="team-card">
-                            <div class="headshot-img">
-                            <img src="images/Members/Jessica.jpg" alt="Jessica Rottner Headshot">
-                            </div>
-                            <h3><a target="_blank" href="https://www.linkedin.com/in/jessica-rottner-1501017/">Jessica Rottner</a></h3>
+                            <img class="headshot-img" src="images/Members/Jessica.jpg" alt="Jessica Rottner Headshot">
+                            <a target="_blank" href="https://www.linkedin.com/in/jessica-rottner-1501017/"><h4>Jessica Rottner</h4></a>
                             <p>Business Administration</p>
                         </div>
                         <div class="team-card">
-                            <div class="headshot-img">
-                            <img src="images/Members/Richard.jpg" alt="Richard Shu Headshot">
-                            </div>
-                            <h3><a target="_blank" href="https://www.linkedin.com/in/richard-s-47786113b/">Richard Shu</a></h3>
+                            <img class="headshot-img" src="images/Members/Richard.jpg" alt="Richard Shu Headshot">
+                            <a target="_blank" href="https://www.linkedin.com/in/richard-s-47786113b/"><h4>Richard Shu</h4></a>
                             <p>Business Administration</p>
                         </div>
                         <div class="team-card">
-                            <div class="headshot-img">
-                            <img src="images/Members/Bassil.png" alt="Bassil Syed Headshot">
-                            </div>
-                            <h3><a target="_blank" href="https://www.linkedin.com/in/bassilsyed/">Bassil Syed</a></h3>
+                            <img class="headshot-img" src="images/Members/Bassil.png" alt="Bassil Syed Headshot">
+                            <a target="_blank" href="https://www.linkedin.com/in/bassilsyed/"><h4>Bassil Syed</h4></a>
                             <p>Business Administration</p>
                         </div>
                     </div>
@@ -239,38 +193,30 @@
                     <h2>Consultants</h2>
                     <p>For everything that doesn't fit under the subteams, we rely on our consultants from a wide range of backgrounds to get the job done. We will be looking for more consultants throughout the fall of 2021!</p>
                     <div class="team-grid">
-                        <div class="elec1">
                         <div class="team-card">
                             <h3>Video Production and Editing</h3>
-                            <div class="headshot-img">
-                                <img src="images/Members/anthony.jpg" alt="Anthony Marx Headshot">
-                                </div>
-                                <h3><a target="_blank" href="https://www.linkedin.com/in/anthony-marx/">Anthony Marx</a></h3>
+                                <img class="headshot-img" src="images/Members/anthony.jpg" alt="Anthony Marx Headshot">
+                                <a target="_blank" href="https://www.linkedin.com/in/anthony-marx/"><h4>Anthony Marx</h4></a>
                                 <p>Environmental Studies</p>
                         </div>
-                        </div>
-                        <div class="elec2">
                         <div class="team-card">
                             <h3>Web Design and Development</h3>
-                            <div class="headshot-img">
-                                <img src="images/Members/Taylor.JPG" alt="Taylor Pessetti Headshot">
-                                </div>
-                                <h3><a target="_blank" href="https://www.linkedin.com/in/taylor-pessetti/">Taylor Pessetti</a></h3>
+                                <img class="headshot-img" src="images/Members/Taylor.JPG" alt="Taylor Pessetti Headshot">
+                                <a target="_blank" href="https://www.linkedin.com/in/taylor-pessetti/"><h4>Taylor Pessetti</h4></a>
                                 <p>Information - User Experience Design</p>
-                        </div>
                         </div>
                     </div>
                 </div>
                     <div class="page-card">
                         <h2>Faculty Advisor</h2>
                         <p>Making sure we have the correct heading, our faculty advisors offer the team expert insight, experience, and support.</p>
-                        <div class="team-card" id="faculty1">
-                            <div class="headshot-img">
-                            <img src="images/Members/krystof.jpg" alt="Krzysztof Fidkowski Headshot">
-                            </div>
-                            <h3>Krzysztof Fidkowski</h3>
-                            <p>Associate Professor, Graduate Program Chair</p>
-                            <p>Aerospace Engineering Department</p>
+                        <div class="team-grid">
+                        <div class="team-card special">
+                            <h3>Head Faculty Advisor</h3>
+                            <img class="headshot-img" src="images/Members/krystof.jpg" alt="Krzysztof Fidkowski Headshot">
+                            <h4>Krzysztof Fidkowski</h4>
+                            <p>Associate Professor, Graduate Program Chair<br>Aerospace Engineering Department</p>
+                        </div>
                         </div>
                     </div>
         </div>
@@ -280,13 +226,15 @@
                 <p class="footer-title">University of Michigan Electric Boat 2021</p>
                 <a href="https://www.linkedin.com/company/uofm-electric-boat/" target="_blank"><img src="logos/linkedin-logo.svg" alt="linkedin logo" class="footer-logo"></a>
                 <a href="https://www.instagram.com/uofmelectricboat/" target="_blank"><img src="logos/instagram-logo.svg" alt="instagram logo" class="footer-logo"></a>
-                <a href="https://twitter.com/MichiganSea" target="_blank"><img src="logos/twitter-logo.svg" alt="twitter logo" class="footer-logo"></a>
+                <a href="https://twitter.com/UMElectricBoat" target="_blank"><img src="logos/twitter-logo.svg" alt="twitter logo" class="footer-logo"></a>
                 <a href="https://www.facebook.com/uofmelectricboat" target="_blank"><img src="logos/facebook-logo.svg" alt="facebook logo" class="footer-logo"></a>
                 <a href="https://www.youtube.com/channel/UCkD23mmCCdCnqKeCeHcaG-A" target="_blank"><img src="logos/youtube-logo.svg" alt="youtube logo" class="footer-logo"></a>
                 <p class="footer-description">Site created by Taylor Pessetti</p>
             </div>
             </footer>
-            </div>
         <script src="js/mainpage.js"></script>
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>
