@@ -275,6 +275,10 @@ li.nav-item.active, .dot:hover{
   justify-content: center;
 }
 
+.team-joining ul{
+  text-align: left;
+}
+
 /* Competition Page */
 .comp img{
   height: auto;
