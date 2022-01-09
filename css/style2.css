@@ -407,7 +407,7 @@ div.hadal-zone{
 
 .small-sponsor-card{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
   flex-direction: column;
@@ -630,6 +630,7 @@ form{
   .new-sponsor-card{
     flex-direction: row;
     padding-left: 30px;
+    justify-content: left;
   }
 
   .new-sponsor-content{
