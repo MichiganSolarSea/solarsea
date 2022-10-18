@@ -476,7 +476,7 @@ form{
 
 /* Boat Iterations Page */
 
-div.boat-head{
+.boat-head{
   background-color: #00274C;
   color: white;
   
@@ -484,12 +484,13 @@ div.boat-head{
   flex-flow: row nowrap;
 }
 
-div.boat-info{
+.boat-info{
   text-align: right;
 }
 
-div.boat-info img{
+.boat-info img{
   max-width: 25%;
+  width: 200px;
 }
 
 
