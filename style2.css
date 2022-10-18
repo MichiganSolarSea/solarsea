@@ -474,6 +474,25 @@ form{
   text-align: left;
 }
 
+/* Boat Iterations Page */
+
+.boat-head{
+  background-color: #00274C;
+  color: white;
+  
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.boat-info{
+  text-align: right;
+}
+
+.boat-info img{
+  max-width: 25%;
+}
+
+
 @media screen and (min-width: 500px){
 
   /* Competition Page */
