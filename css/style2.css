@@ -476,16 +476,20 @@ form{
 
 /* Boat Iterations Page */
 
-.boat img{
-  width: 250px;
-  height: auto;
-  margin: 20px;
-  border: green 20px;
+.boat-head{
+  background-color: #00274C;
+  color: white;
 }
 
-.boat-desc h2{
-  background-color: #00274C;
-  border: yellow 20px;
+.boat img{
+  width: 350px;
+  height: auto;
+  margin: 20px;
+}
+
+.boat-flex{
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .boat-desc li{
@@ -495,10 +499,7 @@ form{
   line-height: 1.1;
   padding: 0px 0px 0px 0px;
   margin: 15px 0px 0px 0px;
-  list-style-type: none;
-  text-decoration: underline;
 }
-
 
 @media screen and (min-width: 500px){
 
