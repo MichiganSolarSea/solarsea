@@ -482,7 +482,7 @@ form{
   padding: 20px;
 }
 
-.boat-head h2{
+.boat-head > h2{
   color: white;
 }
 
@@ -495,11 +495,13 @@ form{
   width: 350px;
   height: auto;
   margin: 15px;
+  border: 15px solid red;
 }
 
 .boat-flex{
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .boat-desc li{
