@@ -479,12 +479,22 @@ form{
 .boat-head{
   background-color: #00274C;
   color: white;
+  padding: 20px;
+}
+
+.boat-head h2{
+  color: white;
+}
+
+.no-bp{
+  list-style-type: none;
+  text-align: center;
 }
 
 .boat img{
   width: 350px;
   height: auto;
-  margin: 20px;
+  margin: 15px;
 }
 
 .boat-flex{
@@ -573,6 +583,8 @@ form{
   }
 
   .list-flex{
+    width: 700px;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
