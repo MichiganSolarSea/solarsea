@@ -476,6 +476,11 @@ form{
 
 /* Boat Iterations Page */
 
+.page-card > h2 {
+  background-color: #00274C;
+  text-size: 40px;
+}
+
 .boat-head{
   background-color: #00274C;
   color: white;
