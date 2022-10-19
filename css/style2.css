@@ -474,6 +474,32 @@ form{
   text-align: left;
 }
 
+/* Boat Iterations Page */
+
+.boat img{
+  width: 250px;
+  height: auto;
+  margin: 20px;
+  border: green 20px;
+}
+
+.boat-desc h2{
+  background-color: #00274C;
+  border: yellow 20px;
+}
+
+.boat-desc li{
+  text-align: left;
+  color: #00274C;
+  font-weight: 500;
+  line-height: 1.1;
+  padding: 0px 0px 0px 0px;
+  margin: 15px 0px 0px 0px;
+  list-style-type: none;
+  text-decoration: underline;
+}
+
+
 @media screen and (min-width: 500px){
 
   /* Competition Page */
