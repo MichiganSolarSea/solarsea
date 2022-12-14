@@ -146,9 +146,9 @@ margin: 15px 0px 0px 0px;
   height: auto;
 }
 
-.navbar{
-  background-color: #00274C;
-}
+/* .navbar{
+  background-color:rgba(0,0,0,0.5);
+} */
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
@@ -818,4 +818,26 @@ form{
 .skip a:focus{
   top:0;
 }
+}
+
+.home-container {
+  width: 100%; height: 850px; border-left: none; border-right: none; position: relative; padding: 20px;
+}
+.video-container {
+  position: absolute; top: 0%; left: 0; width: 100%; height: 100%; overflow:hidden; overflow-x: hidden; overflow-y: hidden;
+}
+.video {
+  object-fit:cover; position: absolute; z-index: -1; width: 100%; filter: brightness(80%);
+}
+
+.umeb-logo{
+  display: block;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16%;
+  border: 3px;
+  padding: 10px;
+  border-radius: 15px;
+  width: 1000px;
 }
