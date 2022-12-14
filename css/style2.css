@@ -171,32 +171,49 @@ li.nav-item.active, .dot:hover{
   margin-top: 10px;
 }
 
+.homeheader {
+  color: white;
+  font-size: 48px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
 #valuesheader{
   margin-top: 30px;
   margin-bottom: 0px;
 }
 
 .value-card{
-  margin: 25px 0px 0px 0px;
-  padding: 30px 0px 30px 0px;
+  position: relative;
+  text-align: center;
   color: white;
-  background-color: rgb(0, 39, 76, 0.9);
+  /* margin: 25px 0px 0px 0px;
+  padding: 30px 0px 30px 0px; */
+  /* color: white; */
+  /* background-color: rgb(0, 39, 76, 0.9); */
 
+}
+.value-card img {
+  width: 100%;
+  filter: brightness(50%)
 }
 
 .value-card h3 {
   color: white;
   margin: 20px 0px 20px 0px;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  transform: translate(-50%, -50%)
 }
 
 .value-card p{
   color: white;
   padding: 0px 25px 0px 25px;
-}
-
-.valuesimg{
-  width: 100px;
-  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .team-card-flex{
@@ -630,11 +647,11 @@ form{
     margin-top: 10px;
   }
 
-  #mssvalues{
+  /* #mssvalues{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-  }
+  } */
 
   /*Teams Page*/
   #officer-grid{
@@ -728,11 +745,11 @@ form{
     margin-top: 20px;
   }
 
-  #mssvalues{
+  /* #mssvalues{
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto;
-  }
+  } */
 
   .value-card{
     margin: 25px 10px 0px 10px;
