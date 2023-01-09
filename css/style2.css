@@ -215,7 +215,6 @@ li.nav-item.active, .dot:hover{
   top: 50%;
   left: 50%;
   display: block;
-  /* height: 50px; */
   transform: translate(-50%, -50%);
 }
 
@@ -644,6 +643,31 @@ form{
     margin-top: 10px;
   }
 
+  .home-container {
+    width: 100%; height: 525px; border-left: none; border-right: none; position: relative; padding: 20px;
+  }
+  
+  .video-container {
+    position: absolute; top: 0%; left: 0; width: 100%; height: 100%; overflow:hidden; overflow-x: hidden; overflow-y: hidden;
+  }
+  
+  .video {
+    object-fit:cover; position: absolute; z-index: -1; width: 100%; filter: brightness(80%);
+  }
+  
+  .umeb-logo{
+    display: block;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16%;
+    border: 3px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 1000px;
+  }
+
+
   /* #mssvalues{
     display: grid;
     grid-template-columns: auto auto;
@@ -742,6 +766,10 @@ form{
     margin-top: 20px;
   }
 
+  .home-container {
+    height: 650px;
+  }
+  
   /* #mssvalues{
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -810,6 +838,14 @@ form{
 
 }
 
+@media screen and (min-width: 1550px){
+
+  .home-container {
+    height: 850px;
+  }
+
+}
+
 @media screen and (prefers-reduced-motion: reduce){
   html{
     scroll-behavior: initial;
@@ -831,26 +867,3 @@ form{
 }
 }
 
-.home-container {
-  width: 100%; height: 850px; border-left: none; border-right: none; position: relative; padding: 20px;
-}
-
-.video-container {
-  position: absolute; top: 0%; left: 0; width: 100%; height: 100%; overflow:hidden; overflow-x: hidden; overflow-y: hidden;
-}
-
-.video {
-  object-fit:cover; position: absolute; z-index: -1; width: 100%; filter: brightness(80%);
-}
-
-.umeb-logo{
-  display: block;
-  z-index: 1;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 16%;
-  border: 3px;
-  padding: 10px;
-  border-radius: 15px;
-  width: 1000px;
-}
