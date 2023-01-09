@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
+        <script type="text/javascript" src="magicscroll/magicscroll.js"></script>
         <link rel="stylesheet" type="text/css" href="css/style2.css">
         <title>Michigan Electric Boat</title>
     </head>
@@ -71,35 +73,76 @@
             </div> -->
 
             <!-- <div class="page-card"> -->
-                <h2 class="homeheader">Our Purpose</h2>
-                    <div class="value-card">
-                        <img src="images/purpose.jpg" alt="team members working on the props">
-                        <p>Michigan Electric Boat is established for the purpose of advancing sustainable technology and promoting its capabilities by representing the University of Michigan in the Promoting Electric Propulsion for Small Craft competition. Our mission is to allow members to apply what they have learned in the classroom and improve themselves as students through hands-on projects in engineering, business, and operations.</p>
-                    </div>
                 
-                <h2 class="homeheader">Our Values</h2>
-                <!-- <div id="mssvalues"> -->
-                    <div class="value-card">
-                        <img class="valuesimg" src="images/innovation.jpg" alt="...">
-                        <h3>Collaboration</h3>
-                        <p>No one member is capable of creating such an ambitious project on their own. UMEB members thrive in the pursuit of over 11 different majors across an array of different colleges and apply the knowledge they learn from said classes on our boat.</p>
+
+
+                <div class="value-card purpose">
+                    <img src="images/purpose.jpg" alt="team members working on the props">
+                    <h3>Our Purpose</h3>
+                    <p>Michigan Electric Boat is established for the purpose of advancing sustainable technology and promoting its capabilities by representing the University of Michigan in the Promoting Electric Propulsion for Small Craft competition. Our mission is to allow members to apply what they have learned in the classroom and improve themselves as students through hands-on projects in engineering, business, and operations.</p>
+                </div>
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-block w-100">
+                                <div class="value-card">
+                                    <img class="valuesimg" src="images/innovation.jpg" alt="...">
+                                    <h3>Our Values: Collaboration</h3>
+                                    <p>No one member is capable of creating such an ambitious project on their own. UMEB members thrive in the pursuit of over 11 different majors across an array of different colleges and apply the knowledge they learn from said classes on our boat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100">
+                                <div class="value-card">
+                                    <img class="valuesimg" src="images/innovation.jpg" alt="team members working on the foils">
+                                    <h3>Our Values: Innovation</h3>
+                                    <p>No idea is a bad idea. UMEB is a safe place to take risks and fully unleash one's creativity. We offer a chance for members to apply their theoretical skills to an actual project. Of course, with a chance to add their own twist of creativity as well.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100">
+                                <div class="value-card">
+                                    <img class="valuesimg" src="images/adaptablity.JPG" alt="Adaptability">
+                                    <h3>Our Values: Adaptability</h3>
+                                    <p>UMEB does not settle for less. As such, our designs are ambitious, and our timeline is tight. We often face many setbacks, but we remain undeterred. Adaptability is an integral part of who we are, and it allows us to strive for greatness. We were founded in the uncertain times that were the pandemic, but have grown to what we are today.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100">
+                                <div class="value-card">
+                                    <img class="valuesimg" src="images/sustain.JPG" alt="Sustainability">
+                                    <h3>Our Values: Sustainability</h3>
+                                    <p>We are committed to carbon-neutrality. This commitment to sustainability is deep-seated in UMEB's mission. Our vessels are charged with solar energy, decreasing our reliance on fossil fuels.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="value-card">
-                        <img class="valuesimg" src="images/innovation.jpg" alt="team members working on the foils">
-                        <h3>Innovation</h3>
-                        <p>No idea is a bad idea. UMEB is a safe place to take risks and fully unleash one’s creativity. We offer a chance for members to apply their theoretical skills to an actual project. Of course, with a chance to add their own twist of creativity as well.</p>
+
+
+
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                     </div>
-                    <div class="value-card">
-                        <img class="valuesimg" src="images/adaptablity.JPG" alt="Adaptability">
-                        <h3>Adaptability</h3>
-                        <p>UMEB does not settle for less. As such, our designs are ambitious, and our timeline is tight. We often face many setbacks, but we remain undeterred. Adaptability is an integral part of who we are, and it allows us to strive for greatness. We were founded in the uncertain times that were the pandemic, but have grown to what we are today.</p>
-                    </div>
-                    <div class="value-card">
-                        <img class="valuesimg" src="images/sustain.JPG" alt="Sustainability">
-                        <h3>Sustainability</h3>
-                        <p>We are committed to carbon-neutrality. This commitment to sustainability is deep-seated in UMEB's mission. Our vessels are charged with solar energy, decreasing our reliance on fossil fuels.</p>
-                    </div>
-                <!-- </div> -->
+                </div>
+
+                
             <!-- </div> -->
             <!-- <div class="page-card">
                 <h2>Our Teams</h2>
