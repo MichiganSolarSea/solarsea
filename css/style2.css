@@ -612,6 +612,18 @@ form{
   margin: 15px 0px 0px 0px;
 }
 
+@media screen and (min-width: 400px){
+
+  .home-container {
+    height: 250px; 
+  }
+    
+  .value-card p{
+    width: 90%;
+  }
+
+}
+
 @media screen and (min-width: 500px){
 
   /* Competition Page */
