@@ -65,6 +65,10 @@ a{
   color: #006CE0;
 }
 
+.new-sponsor-content a h3{
+  color: white;
+}
+
 ul{
   padding-bottom: 0px;
   margin-bottom: 0px;
@@ -422,16 +426,8 @@ li.nav-item.active, .dot:hover{
   color: #00274C;
 }
 
-.new-sponsor-card h3:hover{
-  color:#005cb3;
-}
-
-.small-sponsor-card h3:hover{
-  color:#005cb3;
-}
-
 .new-sponsor-logo{
-  width: 150px;
+  width: 300px;
   height: auto;
 }
 
@@ -530,10 +526,8 @@ div.hadal-zone{
   text-align: center;
   flex-direction: column;
   padding: 30px 20px 30px 20px;
-  background-color: white;
+  background-color: transparent;
   margin: 10px 10px 10px 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
-  0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 12pt;
   color:rgb(65, 65, 65);
   width: 90%;
@@ -859,7 +853,7 @@ form{
   }
 
   .new-sponsor-logo{
-    width: 100px;
+    width: 300px;
     height: auto;
   }
 
