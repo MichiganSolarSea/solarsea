@@ -134,15 +134,31 @@ ul{
   text-align: center;
   background-color: #00274C;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 100%;
 }
 
 .footer-logo{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-logo a{
 padding: 0px 10px 0px 10px;
 }
 
+.footer-spons{
+  background-color: white;
+  border-radius: 30px;
+}
+
 .footer-spons img{
-  width: 75px;
+  width: 125px;
+  height: auto;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 
@@ -745,6 +761,20 @@ form{
     justify-content: center;
   }
 
+  .footer{
+    padding: 20px 0px 20px 0px;
+    color: white;
+    text-align: center;
+    background-color: #00274C;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+  }
+
+  .footer-logo{
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 @media screen and (min-width: 950px){
@@ -879,6 +909,10 @@ form{
 
   .sponsor-card-2{
     height: 300px;
+  }
+
+  .footer-spons img{
+    padding-top: 40px;
   }
   
 }
