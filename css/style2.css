@@ -111,15 +111,17 @@ ul{
 .btn.btn-outline-primary{
   margin: 15px 10px 0px 10px;
   border-color: #00274C;
+  background-color: white;
   color:#00274C;
   min-width: 250px;
 }
 
 .btn.btn-outline-primary:hover{
   border-color: #00274C;
-  background-color: #00274C;
+  background-color: #0c5baa;
   color:white;
 }
+
 
 
 .footer-title{
@@ -163,6 +165,59 @@ padding: 0px 10px 0px 10px;
 
 
 /*Navigation*/
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  /* background-color: #fff; */
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.nav-link.dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.nav-link.dropdown-toggle:focus::after,
+.nav-link.dropdown-toggle:hover::after {
+  border-top-color: #fff;
+}
 
 #nav-logo{
   width: 200px;
@@ -303,6 +358,78 @@ li.nav-item.active, .dot:hover{
 
 /*Teams Page*/
 
+.teams-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+.teams-box {
+  border: 2px solid #0c5baa; /* set the border color and width */
+  border-radius: 10px; /* round the corners of the border */
+  box-shadow: 0px 0px 10px #0c5baa; /* add a shadow effect */
+  padding: 10px; /* add some padding inside the box */
+}
+.teams-container h2 {
+  color: white;
+  font-size: 45px;
+}
+.teams-mechanical {
+  flex-basis: 25%;
+  background-color: #00274C;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+.teams-electric {
+  flex-basis: 25%;
+  background-color: #00274C;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+.teams-business {
+  flex-basis: 25%;
+  background-color: #00274C;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+.teams-operations {
+  flex-basis: 25%;
+  background-color: #00274C;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+.top-image {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  filter: brightness(50%)
+}
+.hide-unhide {
+  display: none;
+}
+.teams-overview {
+  background-color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-gap: 10px;
+}
+.teams {
+  background-color: #00274C;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 100%;
+}
+.teams-overview a:last-child {
+  margin-bottom: 1%;
+}
+
+.teams h2 {
+  color: white;
+  font-size: 45px;
+}
+
 .headshot-img{
   height: 175px;
   width: auto;
@@ -342,8 +469,15 @@ li.nav-item.active, .dot:hover{
 }
 
 .team-card-leader h3{
-  color: #00274C;
+  color: white;
   margin: 15px 0px 10px 0px;
+}
+
+.team-card-leader h4 {
+  color: white;
+}
+.team-card-leader p {
+  color: white;
 }
 
 .team-grid{
@@ -607,6 +741,94 @@ form{
 
 /* Boat Iterations Page */
 
+.about-info {
+  background-color: #00274C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+}
+.legacy-grid {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-gap: 50px;
+}
+.legacy-grid-left img {
+  max-width: 100%;
+}
+.legacy-grid-left {
+  text-align: left;
+}
+.legacy-grid-right {
+  text-align: left;
+}
+.legacy-grid-right img {
+  max-width: 100%;
+}
+.about-info h2 {
+  color: white;
+  font-size: 30px;
+}
+.about-info p {
+  color: white;
+  font-size: 20px;
+}
+.about-info-inverted {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+}
+.about-info-inverted h2 {
+  color: #00274C;
+  font-size: 30px;
+}
+.about-info-inverted p {
+  color: #00274C;
+  font-size: 20px;
+}
+.our-boats {
+  padding: 5% 0;
+  background-color: #00274C;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.our-boats h2 {
+  color: white;
+}
+.our-boats p {
+  color: white;
+}
+.boats-grid {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-gap: 20px;
+}
+.boats-grid-div {
+  text-align: left;
+}
+.boats-grid-div img {
+  max-width: 100%;
+}
+.white-line {
+  height: 3px;
+  border: none;
+  background-color: white;
+  width: 60%;
+  margin: 0 auto;
+}
+.line-container {
+  width: 100%;
+}
+.head-container {
+  width: 100%;
+}
+
 .boat-head{
   background-color: #00274C;
   color: white;
@@ -690,6 +912,8 @@ form{
     padding: 0px 6px 0px 6px;
   }
 
+
+
   /* Main Page */
 
   .value-card h3 {
@@ -706,6 +930,17 @@ form{
     width: 250px;
     margin: 20px 20px 0px 20px;
   }
+
+  .team-card h4 {
+    color: white;
+  }
+  .team-card p {
+    color: white;
+  }
+  .team-card h3 {
+    color: white;
+  }
+
 
   .team-grid{
     flex-direction: row;
@@ -831,7 +1066,7 @@ form{
   /*Teams Page*/
   #officer-grid{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 30%;
     grid-template-rows: auto;
     grid-column-gap: 20px;
     justify-content: center;
@@ -934,10 +1169,34 @@ form{
 
   /* Teams Page */
 
+  .hide_teams {
+    display: none;
+  }
+  .show-more {
+    background-color: white;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  
+  .show-more:hover {
+    background-color: #f5f5f5;
+  }
+
+  .team-desc p {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
   .top-team-grid{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto;
+    justify-content: center;
   }
 
   .team-desc{
