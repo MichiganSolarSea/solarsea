@@ -163,8 +163,19 @@ padding: 0px 10px 0px 10px;
   padding-bottom: 10px;
 }
 
-
 /*Navigation*/
+
+.nav-container {
+  height: 90vh;
+}
+
+.donate {
+  background-color: white;
+  padding: 10px 20px !important;
+  border-radius: 5px;
+  color: #00274C !important;
+  font-weight: bold;
+}
 
 .dropdown-menu {
   position: absolute;
@@ -177,7 +188,6 @@ padding: 0px 10px 0px 10px;
   font-size: 1rem;
   color: #212529;
   text-align: left;
-  /* background-color: #fff; */
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
